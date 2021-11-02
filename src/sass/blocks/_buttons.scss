@@ -1,0 +1,13 @@
+.btn {
+    height: 45px;
+    padding: 12px 25px;
+    background: $main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.5s all;
+    &:hover {
+        background: #C35FF1;
+    }
+    &:active {
+        background: #9D83A9;
+    }
+}

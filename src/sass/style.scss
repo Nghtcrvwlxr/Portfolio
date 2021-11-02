@@ -11,3 +11,14 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/titles';
+@import 'blocks/buttons';
+@import 'blocks/promo';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
