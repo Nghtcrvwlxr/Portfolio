@@ -15,6 +15,15 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+    padding: 0;
+}
+
+.divider {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin-top: 25px;
 }
 
 @import 'blocks/titles';
@@ -22,3 +31,4 @@
 @import 'blocks/promo';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
+@import 'blocks/about';
