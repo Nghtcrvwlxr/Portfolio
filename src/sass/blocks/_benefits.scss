@@ -1,0 +1,97 @@
+.benefits {
+    padding-top: 120px;
+    padding-bottom: 85px;
+    &__title {
+        position: relative;
+        text-align: center;
+        margin-top: 6px;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__headline {
+        text-align: center;
+    }
+
+    &__wrapper {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        padding-left: 45px;
+        &__title {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                left: -52px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background: $main-color;
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        li {
+            position: relative;
+            margin-top: 45px;
+            &:after {
+                content: '';
+                position: absolute;
+                top: -53px;
+                left: -45px;
+                height: calc(100% + 50px);
+                width: 1px;
+                background-color: #000;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &__head {
+            position: relative;
+            padding-left: 56px;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -45px;
+                transform: translateY(-50%);
+                width: 45px;
+                height: 1px;
+                background-color: #000;
+            }
+        }
+        &__descr {
+            margin-top: 12px;
+        }
+        &__icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include before_circle;
+            img {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+            }
+        }
+        &__note {
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+        &__descr {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
