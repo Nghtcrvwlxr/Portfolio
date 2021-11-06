@@ -18,6 +18,7 @@
         text-align: center;
         color: #FFFFFF;
     }
+    
     &__wrapper {
         display: grid;
         grid-template: repeat(2, minmax(270px, auto)) / repeat(4, minmax(270px, auto));
@@ -74,7 +75,7 @@
             }
         }
     }
-    &__number {
+    &__percentage {
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
