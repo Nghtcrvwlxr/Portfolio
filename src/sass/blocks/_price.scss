@@ -13,6 +13,7 @@
     &__headline {
         text-align: center;
     }
+    
     &__wrapper {
         padding: 60px 50px 0 50px;
         display: grid;
@@ -23,13 +24,13 @@
     &__item {
         padding-left: 25px;
         display: grid;
-        grid-template-rows: 21px 18px;
+        grid-template-rows: minmax(21px, auto) minmax(18px, auto);
         row-gap: 5px;
     }
     &__head {
         position: relative;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, auto);
         justify-content: space-between;
         &__subtitle {
             @include before_circle;
@@ -39,7 +40,6 @@
                 left: -25px;
                 top: 50%;
                 transform: translateY(-50%);
-                
             }
         }
     }
