@@ -42,7 +42,11 @@
         padding-top: 140px;
         padding-left: 40px;
         transition: 0.5s all;
-        background-color: $main-color;
+        background: $main-color;
+        box-shadow: 0 -150px 70px -120px purple inset,
+              0 -220px 70px -120px pink inset,
+              0 -280px 70px -120px violet inset;
+        animation: gradient 3s infinite linear;
     }
 
     &__close {
@@ -94,6 +98,12 @@
         justify-content: space-between;
         align-items: center;
         width: 90px;
+        a {
+            transition: 0.5s all;
+            &:hover {
+                transform: rotate(360deg) scale(2);
+            }
+        }
     }
 
     &__overlay {

@@ -33,7 +33,7 @@ gulp.task('watch', function() {
     gulp.watch("src/js/**/*.js").on('change', gulp.parallel('scripts'));
     gulp.watch("src/fonts/**/*").on('add', gulp.parallel('fonts'));
     gulp.watch("src/icons/**/*").on('add', gulp.parallel('icons'));
-    gulp.watch("src/img/**/*").on('ad', gulp.parallel('images'));
+    gulp.watch("src/img/**/*").on('add', gulp.parallel('images'));
 });
 
 gulp.task('html', function () {
