@@ -17,4 +17,22 @@ percentage.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML
 });
 
+$(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        }   else{
+            $('.pageup').fadeOut();
+        }
+    });
+
+    const $page = $('html, body');
+    $('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+    });
+});
+
 new WOW().init();

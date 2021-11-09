@@ -1,0 +1,99 @@
+@media (max-width: 1430px) {
+    
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 300px 530px;
+        }
+        &__form {
+            grid-template: 45px 190px 44px/repeat(2,240px);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .contacts {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        &__headline {
+            font-size: 30px;
+            line-height: 48px;
+            margin-top: 20px;
+        }
+        &__divider {
+            margin-top: 15px;
+        }
+        &__wrapper {
+            grid-template-columns: minmax(550px, auto);
+        }
+        &__picture {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .contacts {
+        padding: 40px 10px 50px 10px;
+        &__wrapper {
+            grid-template-columns: minmax(460px, auto);
+            padding: 0 10px 0 10px;
+            justify-content: center;
+        }
+        &__form {
+            grid-template: 45px 190px 44px/repeat(2,220px);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .contacts {
+        padding: 40px 0 50px 0;
+        &__headline {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__wrapper {
+            grid-template-columns: minmax(300px, auto);
+        }
+        &__form {
+            grid-template: 45px 45px 190px minmax(44px, auto)/ 100%;
+            row-gap: 20px;
+        }
+        &__triggers {
+            grid-row: unset;
+            grid-column: unset;
+            grid-template: repeat(2, 44px) / 220px;
+            row-gap: 20px;
+            justify-content: center;
+        }
+        &__textarea {
+            grid-row: unset;
+            grid-column: unset;
+        }
+        &__policy {
+            grid-row: 1/2;
+        }
+        &__btn {
+            grid-row: 2/3;
+        }
+    }
+}
+

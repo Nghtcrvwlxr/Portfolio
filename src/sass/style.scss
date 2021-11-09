@@ -29,12 +29,15 @@
 
 @import 'blocks/titles';
 @import 'blocks/buttons';
-@import 'blocks/promo';
+@import 'blocks/pageup';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
-@import 'blocks/about';
-@import 'blocks/benefits';
-@import 'blocks/skills';
-@import 'blocks/portfolio';
-@import 'blocks/price';
-@import 'blocks/contacts';
+@import 'blocks/promo/promo';
+@import 'blocks/about/about';
+@import 'blocks/benefits/benefits';
+@import 'blocks/skills/skills';
+@import 'blocks/portfolio/portfolio';
+@import 'blocks/price/price';
+@import 'blocks/contacts/contacts';
+
+@import 'blocks/media';

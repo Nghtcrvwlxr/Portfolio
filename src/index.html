@@ -75,7 +75,7 @@
         <div class="menu__overlay"></div>
     </div>
 
-    <section class="promo">
+    <section id="up" class="promo">
 
         <aside class="sidepanel">
             <a href="https://www.facebook.com/" class="sidepanel__link"><img src="icons/social/Facebook_white.svg" alt="facebook"></a>
@@ -110,7 +110,13 @@
             <div class="about__wrapper">
                 
                 <div class="about__picture">
-                    <img src="img/Sample_image1.jpg" alt="about_me_img">
+                    <picture>
+                        <source media="(min-width: 769px)" srcset="img/pictures/Sample_image1(x1).jpg,
+                                                                   img/pictures/Sample_image1(x2).jpg 2x">
+                        <source media="(max-width: 768px)" srcset="img/pictures/Sample_image_mobile(x1).jpg,
+                                                                   img/pictures/Sample_image_mobile(x2).jpg 2x">
+                        <img src="img/Sample_image1.jpg" alt="about_me_img">
+                    </picture>
                 </div>
 
                 <div class="about__descr">
@@ -162,7 +168,7 @@
         <div class="container">
             <h3 class="title benefits__title">Опыт</h3>
             <h2 class="headline benefits__headline">Чем я буду полезен</h2>
-            <div class="divider"></div>
+            <div class="divider benefits__divider"></div>
 
             <div class="benefits__wrapper">
                 <div class="benefits__column">
@@ -248,7 +254,7 @@
         <div class="container">
             <h3 class="title skills__title">Навыки</h3>
             <h2 class="headline skills__headline">Что я использую в работе</h2>
-            <div class="divider"></div>
+            <div class="divider skills__divider"></div>
 
             <div class="skills__wrapper">
                 <div class="skills__block animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s">
@@ -362,7 +368,7 @@
         <div class="container">
             <h3 class="title portfolio__title">Портфолио</h3>
             <h2 class="headline portfolio__headline">Мои работы</h2>
-            <div class="divider"></div>
+            <div class="divider portfolio__divider"></div>
 
             <div class="portfolio__wrapper">
                 <a href="https://github.com/Nghtcrvwlxr/Project-Portfolio" class="portfolio__item">
@@ -455,7 +461,13 @@
             <div class="contacts__wrapper">
 
                 <div class="contacts__picture">
-                    <img src="img/Sample_image2.jpg" alt="contacts_img">
+                    <!-- <img src="img/Sample_image2.jpg" alt="contacts_img"> -->
+
+                    <picture>
+                        <source srcset="img/pictures/Sample_image2(x1).jpg,
+                                                                   img/pictures/Sample_image2(x2).jpg 2x">
+                        <img src="img/Sample_image2.jpg" alt="about_me_img">
+                    </picture>
                 </div>
 
                  <div class="contacts__descr">
@@ -509,6 +521,11 @@
         </div>
     </section>
 
+    <a href="#up" class="pageup">
+        <img src="icons/chevron-circle-up-solid.svg" alt="chevron_up">
+    </a>
+
+    <script src="js/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 
